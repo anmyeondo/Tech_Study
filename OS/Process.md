@@ -60,7 +60,19 @@ Terminated - 프로세스의 실행을 완료한 상태 <br/>
  * **Open File List**<br/>
 프로세스에서 사용하는 파일을 관리하기 위한 정보를 저장하는 공간이다. 흔히 fopen등을 통해 생성된 file descriptor가 저장된다. 또한 프로세스가 실행될 때 자동으로 stdin, stdout, stderr이 열리게 ㅗ딘다.
 
+## Multi Process
+우리가 실제로 사용하는 컴퓨터는 한 번에 하나의 프로세스만 실행하는 것이 아닌 여러 개의 프로세스를 동시에 실행하게 된다. 하지만 OS는 이를 병렬로 처리하지 않는다.<br/>
+그럼에도 불구하고 동시에 프로세스가 실행되는 것처럼 보이는 이유는 동시성(concurrency)에 의해서 이다.
+
+동시성이란, 동시에 실행되는 것이 아니지만 동시에 실행되는 것처럼 보이는 것이다. 실제로 컴퓨터는 여러개의 프로세스를 번갈아가며 매우 빠르게 실행하기 때문에 동시에 실행되는 것처럼 보이는 것이다.
+
+위에서 말한 동시성을 위해 OS는 `Context Switching`이란 기법을 사용한다.
+
+### Context Switching
+프로세스를 실행하다 다른 프로세스의 실행이 필요할 경우 현재 진행하던 프로세스를 정지하고, 또다른 프로세스를 실행하는 방법이다. 이 때 프로세스의 진행 정보는 PCB의 PC에 저장되게 된다. 또한 Context Switching은 cache 초기화, memory mapping 초기화 등으로 인해 비용이 많이 드는 작업이다.
+
 ## Reference
 https://bowbowbow.tistory.com/16 <br/>
 https://enlqn1010.tistory.com/30 <br/>
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jooda99&logNo=220693179391 <br/>
+https://nesoy.github.io/articles/2018-11/Context-Switching <br/>
