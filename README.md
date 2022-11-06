@@ -48,7 +48,7 @@
 <div id="os"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198955235-600d7719-346c-44c6-8aa4-cfddc61b77bf.svg" width="20px" height="20px"> &nbsp;Operating System
-[1. Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
+1. [Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
 2. Thread
 3. Synchronize
 4. Deadlock
