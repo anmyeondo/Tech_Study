@@ -49,13 +49,14 @@
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198955235-600d7719-346c-44c6-8aa4-cfddc61b77bf.svg" width="20px" height="20px"> &nbsp;Operating System
 1. [Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
-2. Thread
-3. Synchronize
-4. Deadlock
-5. Segmentation & Paging
-6. Memory
-7. Inter Process Call
-8. Scheduling Algorithm
+2. [Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Thread.md)
+3. [Process VS Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/ProcessVSThread.md)
+4. [Synchronize](https://github.com/anmyeondo/Tech_Study/blob/main/OS/3_Synchronize.md)
+5. Deadlock
+6. Segmentation & Paging
+7. Memory
+8. Inter Process Call
+9. Scheduling Algorithm
 <br/>
 
 <div id="db"/>
