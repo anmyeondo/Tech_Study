@@ -48,6 +48,9 @@
 <div id="os"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198955235-600d7719-346c-44c6-8aa4-cfddc61b77bf.svg" width="20px" height="20px"> &nbsp;Operating System
+0. [OS](https://github.com/anmyeondo/Tech_Study/blob/main/OS/OS.md)
+1. [CPU](https://github.com/anmyeondo/Tech_Study/blob/main/OS/CPU.md)
+2. [Cache](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Cache.md)
 1. [Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
 2. [Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Thread.md)
 3. [Process VS Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/ProcessVSThread.md)
