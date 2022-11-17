@@ -23,4 +23,4 @@
 
 ## 간단한 CPU 싸이클
 ![시스템버스](https://user-images.githubusercontent.com/31719854/202533376-92b05c14-81db-469d-a716-f35193e298ee.jpg)
-출처 : https://hpclab.tistory.com/1?category=887083
+- 출처 : https://hpclab.tistory.com/1?category=887083
