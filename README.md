@@ -48,18 +48,16 @@
 <div id="os"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198955235-600d7719-346c-44c6-8aa4-cfddc61b77bf.svg" width="20px" height="20px"> &nbsp;Operating System
-0. [OS](https://github.com/anmyeondo/Tech_Study/blob/main/OS/OS.md)
-1. [CPU](https://github.com/anmyeondo/Tech_Study/blob/main/OS/CPU.md)
-2. [Cache](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Cache.md)
-1. [Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
-2. [Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Thread.md)
-3. [Process VS Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/ProcessVSThread.md)
-4. [Synchronize](https://github.com/anmyeondo/Tech_Study/blob/main/OS/3_Synchronize.md)
-5. Deadlock
-6. Segmentation & Paging
-7. Memory
-8. Inter Process Call
-9. Scheduling Algorithm
+1. [OS](https://github.com/anmyeondo/Tech_Study/blob/main/OS/OS.md)
+2. [Process](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Process.md)
+3. [Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Thread.md)
+4. [Process VS Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/ProcessVSThread.md)
+5. [Synchronize](https://github.com/anmyeondo/Tech_Study/blob/main/OS/3_Synchronize.md)
+6. Deadlock
+7. Segmentation & Paging
+8. Memory
+9. Inter Process Call
+10. Scheduling Algorithm
 <br/>
 
 <div id="db"/>
@@ -74,7 +72,8 @@
 <div id="computer_structure"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954764-3e25656f-cf5b-413c-ac46-d4d694f684d4.svg" width="20px" height="20px"> &nbsp;Computer Structure
-뭐 할지 잘 모르겄다...
+1. [CPU](https://github.com/anmyeondo/Tech_Study/blob/main/ComputerStructure/CPU.md)
+2. [Cache](https://github.com/anmyeondo/Tech_Study/blob/main/ComputerStructure/Cache.md)
 <br/>
 
 <div id="design_pattern"/>
