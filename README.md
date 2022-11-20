@@ -33,7 +33,7 @@
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954608-5103824c-db9b-42a0-ae6e-1a009828de8f.svg" width="20px" height="20px"> &nbsp;Network
 1. [OSI 7계층 & TCP/IP 4계층](https://github.com/0seob/Tech_Study/blob/main/Network/OSI7.md)
-2. TCP & UDP
+2. [TCP & UDP](https://github.com/anmyeondo/Tech_Study/blob/main/Network/TCP_UDP.md)
 3. HTTP & HTTPS
 4. Cookie & Session
 5. CORS
