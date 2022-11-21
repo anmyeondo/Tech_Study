@@ -11,7 +11,7 @@
 5. <a href="#db"> DataBase </a>
 6. <a href="#computer_structure"> Computer Structure </a>
 7. <a href="#design_pattern"> Design Patterns </a>
-8. <a href="#programming_language> Programming Language </a>
+8. <a href="#programming_language"> Programming Language </a>
 <br/>
 
 <div id="algorithm"/>
@@ -88,7 +88,7 @@
 <div id="programming_language"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/202966269-33ff0b33-1e5c-4a30-b658-a5e604b84257.svg" width="20px" height="20px"> &nbsp;Programming Language
-1. C++
+1. [C++](https://github.com/anmyeondo/Tech_Study/blob/main/%EC%96%B8%EC%96%B4%20%EB%B3%84%20%EB%A9%B4%EC%A0%91%EC%A0%95%EB%A6%AC/C%2B%2B.md)
 2. Java
 3. JavaScript
 4. Python
