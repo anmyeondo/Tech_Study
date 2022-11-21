@@ -11,6 +11,7 @@
 5. <a href="#db"> DataBase </a>
 6. <a href="#computer_structure"> Computer Structure </a>
 7. <a href="#design_pattern"> Design Patterns </a>
+8. <a href="#programming_language> Programming Language </a>
 <br/>
 
 <div id="algorithm"/>
@@ -83,3 +84,13 @@
 2. Model-View-Controller (MVC)
 3. J2EE (Java -> 민균이 x)
 <br/>
+
+<div id="programming_language"/>
+
+## <img src="https://user-images.githubusercontent.com/29935137/202966269-33ff0b33-1e5c-4a30-b658-a5e604b84257.svg" width="20px" height="20px"> &nbsp;Programming Language
+1. C++
+2. Java
+3. JavaScript
+4. Python
+
+
