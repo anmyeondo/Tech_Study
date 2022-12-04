@@ -9,6 +9,7 @@
 - HTTP 프로토콜은 통신 시 사용하는 기본 포트를 80번으로 약속하고 있다.
   - HTTP 서버에서는 80번 포트를 열어두고 클라이언트로부터 요청을 대기한다.
   - 클라이언트는 TCP 80 포트를 사용해 서버에 요청 메시지를 보내고 서버는 이에 응답한다.
+- HTTP는 Application 레이어에서 사용되는 프로토콜로 Transport Layer에서는 TCP 방식을 사용하므로 TCP 통신의 특징을 갖는다고 말할 수 있다.
 
 <br/>
 <br/>
@@ -78,3 +79,4 @@
 ### 레퍼런스
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network#http%EC%99%80-https
 - https://wooody92.github.io/network/HTTP-%EB%B3%B4%EC%95%88-%EB%AC%B8%EC%A0%9C%EC%99%80-HTTPS/
+- https://hwan-shell.tistory.com/271
