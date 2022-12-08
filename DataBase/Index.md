@@ -5,6 +5,9 @@
 <img src="https://user-images.githubusercontent.com/29935137/205790720-52ac65b5-90a9-4140-bbe0-08b8a7988018.png" width=700px height=500px/>
 </p>
 
+그림에서는 id로 나와있지만, 실제로는 각각의 테이블이나 레코드의 주소를 가리키고 있다.
+<br/>
+
 ### 특징
 - 보통 `기본키(Primary Key)`의 경우 기본적으로 인덱싱이 되어있다.
 - 대표적인 자료구조로 `B-tree`, `B+tree` 가 있고 특정 상황에서 `GIN`도 활용한다.
@@ -62,10 +65,27 @@ SELECT * FROM Student WHERE name like '%Jaehun';
 ```
 
 위의 예시처럼 `like`를 사용할 때 %가 먼저 나오게 되면 문자열로 정렬된 Btree 인덱스 입장에서는 빠르게 찾을 수가 없다.
-이를 위해 `Postgresql`에서 `GIN`를 제공하여 
+이를 위해 `Postgresql`에서 `GIN`를 제공하여 해결할 수 있다. 
 
+GIN은 trgm(tri-gram) 방식을 사용하여 문자열을 3개 단위로 쪼개 인덱스를 만든다 이렇게 되면 3개 이상의 문자에 대해 검색을 할 때 인덱스를 탈 수 있게 된다.
+또한 이런 GIN을 사용하기 위해서 Postgresql의 pg_trgm extension을 추가 해야 사용할 수 있다.
+<br/>
+<br/>
+
+## 다중 컬럼 인덱스
+만약 한 개 이상의 컬럼에서 인덱스를 사용하고 싶다면 어떻게 해야할까. 즉, Student 테이블에 name도 인덱스로 사용하고 싶고, grade도 인덱스로 사용하고 싶다면 말이다.
+물론 편하게 생각하여 name에 대한 인덱스와 grade에 대한 인덱스를 생성하면 되지 않을까 생각할 수 있다. 이는 DBMS에서 쿼리의 실행게획을 생성할 때 더욱 효과적인 인덱스를 선택해 사용하고 그 뒤에 다른 인덱스를 사용하게 된다. 이것보다 효과적으로 인덱스를 생성할 수 있는 것이 다중 컬럼 인덱스이다.
+
+예를 들면
+```sql
+CREATE INDEX idx01 ON Students USING Btree (name, grade)
+```
+이런식으로 인덱스를 생성할 수 있다. 해당 인덱스는 name을 기준으로 grade가 정렬되어 있어서 name 다음에 grade가 나와야 의미가 있다. (순서가 중요하다!)
+<br/>
+<br/>
 
 ## Reference
 https://ssocoit.tistory.com/217 <br/>
 https://zorba91.tistory.com/293 <br/>
 https://ssup2.github.io/theory_analysis/B_Tree_B+_Tree/ <br/>
+https://steady-coding.tistory.com/546
