@@ -69,6 +69,8 @@
 3. Sharding
 4. DBMS (RDBMS, NoSQL, ...)
 5. Normalization, De-Normalizat
+6. Plan (EXPLAIN, ANALYZE, ...)
+7. SQL (DML, DDL, DCL)
 <br/>
 
 <div id="computer_structure"/>
