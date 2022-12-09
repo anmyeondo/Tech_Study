@@ -71,6 +71,9 @@
 5. Normalization, De-Normalizat
 6. Plan (EXPLAIN, ANALYZE, ...)
 7. SQL (DML, DDL, DCL)
+
+### 학습할 때 보면 좋은 링크
+[DBMS에 대하여](https://code-run.tistory.com/20)
 <br/>
 
 <div id="computer_structure"/>
