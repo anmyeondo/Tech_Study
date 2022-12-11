@@ -18,7 +18,7 @@
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954604-52cbd384-fadb-4cd9-82ba-b19dafa779cb.svg" width="20px" height="20px"> &nbsp;Algorithm
 1. Sort
-2. Serch
+2. Search
 <br/>
 
 <div id="data_structure"/>
