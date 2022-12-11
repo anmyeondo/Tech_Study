@@ -24,8 +24,8 @@
 <div id="data_structure"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954607-299d69e0-4197-4c66-96be-7c20cc49ff88.svg" width="20px" height="20px"> &nbsp;Data Structure
-1. Array
-2. Linked List
+1. [Array](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/Array.md)
+2. [Linked List](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/LinkedList.md)
 3. Stack & Queue
 4. Tree
 <br/>
