@@ -33,7 +33,7 @@ Btree는 Balanced Binary Tree를 기반으로 만들어진 자료 구조이다. 
 그리고 자식 노드의 최대 개수를 M이라 할 때 M차 B-Tree라고 하며 노드가 최대로 가질 수 있는 Key는 M-1 개이다.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/29935137/206369724-e69358f7-a06b-4e5b-b2ae-7cf849e0a316.png" width=760px height=360px/>
+<img src="https://user-images.githubusercontent.com/29935137/206967507-9f567413-6693-401d-84ca-87ffc2c3b010.png" width=760px height=360px/>
 </p>
 
 - 노드의 키와 데이터는 정렬
