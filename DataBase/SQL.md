@@ -30,3 +30,4 @@
   - 종류
     - COMMIT : 트랜잭션 작업 결과를 저장 반영(트랜잭션 완료)
     - ROLLBACK : 데이터베이스를 마지막 COMMIT 된 시점의 상태로 복원 
+    - SAVEPOINT : SAVEPOINT를 정의하면 ROLLBACK할 때 트랜잭션에 포함된 전체 작업을 롤백하는 것이 아니라 현 시점에서 SAVEPOINT까지 트랜잭션의 일부만 롤백할 수 있다.
