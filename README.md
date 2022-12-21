@@ -67,7 +67,7 @@
 1. [ACID & Transaction](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/ACID%26Transaction.md)
 2. [Index](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Index.md)
 3. Sharding
-4. DBMS (RDBMS, NoSQL, ...)
+4. [DBMS](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/DBMS.md)
 5. Normalization, De-Normalizat
 6. Plan (EXPLAIN, ANALYZE, ...)
 7. [SQL](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/SQL.md)
