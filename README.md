@@ -27,7 +27,7 @@
 1. [Array](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/Array.md)
 2. [Linked List](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/LinkedList.md)
 3. [Stack & Queue](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/StackQueue.md)
-4. Tree
+4. [Graph & Tree](https://github.com/anmyeondo/Tech_Study/blob/main/DataStructure/Tree.md)
 <br/>
 
 <div id="network"/>
