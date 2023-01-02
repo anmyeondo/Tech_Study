@@ -101,3 +101,6 @@ Spring의 경우 모든 객체가 Singletone으로 관리 되어 있다. 각각�
 ## Builder
 
 ## Prototype
+
+## Reference
+https://refactoring.guru/ko/design-patterns/creational-patterns
