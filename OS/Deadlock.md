@@ -24,21 +24,23 @@
 - single instance: cycle <-> deadlock
 - multiple instance: deadlock -> cycle | !cycle -> !deadlock
 
-## 데드락의 해결방법
+<img width="281" alt="deadlock-2" src="https://user-images.githubusercontent.com/29935109/210229304-4c637705-8a5e-4582-b74b-9bc73a4e9973.png"><img width="302" alt="deadlock-3" src="https://user-images.githubusercontent.com/29935109/210229314-04268bf3-6b8a-4b76-87ba-c5dd63f052a0.png">
+
+## 데드락의 해결 방법
 ### Deadlock prevention (예방)
 - 필요조건 4개 중 적어도 하나 이상 성립이 안되도록 하여 데드락을 방지하는 방법
  1. Mutual exclusion
     - 공유 자원이 너무 많아서 이 조건을 막기는 어려움
     - 한 번에 여러 프로세스가 공유 자원을 사용할 수 있도록 변경할 수는 있으나 동기화 문제가 발생할 수도 있음
  2. Hold and Wait
-    - 프로세스를 시작하기 전에 필요한 자원을 한꺼번에 할당하거나 잡고 있는 자원이 없을때만 자원을 요청함
+    - 프로세스를 시작하기 전에 필요한 자원을 한꺼번에 할당하거나 잡고 있는 자원이 없을 때만 자원을 요청함
     - Low resource utilization과 starvation의 문제가 발생할 수 있음
  3. No Preemption
-    - 새로운 자원할당이 불가능하면 가지고 있는 자원을 다 내놓거나 대기중인 프로세스의 자원을 반납하게 함
-    - 자원을 다 할당 받을 수 있을 때 프로세스를 다시 시작함
+    - 새로운 자원 할당이 불가능하면 가지고 있는 자원을 다 내놓거나 대기 중인 프로세스의 자원을 반납하게 함
+    - 자원을 다 할당받을 수 있을 때 프로세스를 다시 시작함
  4. Circular Wait
     - total ordering을 통해 순서를 정하고 어떤 자원을 요청할 때 그 자원보다 높은 순서의 자원을 가질 수 없음
-- 1~3번 조건은구현하기 굉장히 까다롭기 때문에 4번을 통해서 prevention하는 것이 가장 현실적인 방법
+- 1~3번 조건은 구현하기 굉장히 까다롭기 때문에 4번을 통해서 prevention 하는 것이 가장 현실적인 방법
 
 ### Deadlock avoidance (회피)
  - 필요한 자원에 대한 정보를 이용하여 Deadlock이 일어나지 않는 방향으로 프로세스를 진행
@@ -49,6 +51,7 @@
    - safe state -> no deadlocks
    - unsafe state -> deadlock 가능성 있음
    - avoidance는 시스템이 unsafe state로 들어가지 않는 것을 보장하는 것
+   <img width=40% src="https://user-images.githubusercontent.com/29935109/210230008-94f95356-73b6-469b-8f56-fe9dbb4b58d6.jpeg">
  - Avoidance algorithm(다음주에 추가 예정)
    - resource-allocation graph(single instance)
    - Banker's algorithm(multiple instance)
@@ -58,12 +61,14 @@
  - Single Instance of Each Resource Type
    - wait-for graph(Resource-allocation graph에서 resource를 뺀 것)을 사용해 탐지 알고리즘 정의
    - 대기 그래프가 사이클을 포함하는 경우에만 시스템에 deadlock이 존재하고, 이를 탐지하기 위해 시스템은 대기 그래프를 유지하고 주기적으로 사이클을 탐지하는 알고리즘을 실행. 이 알고리즘의 복잡도는 O(n^2)
+   <img width=60% src="https://user-images.githubusercontent.com/29935109/210230038-255b4b82-0e8b-4199-950e-d6f848507dc3.jpeg">
+   
  - Several Instance of a Resource Type
    - Banker's Algorithm과 유사하게 내용이 달라지는 자료구조를 사용
    - Banker's Algorithm과의 차이점
-     - Max가 없는 대신 현재 Request를 Need로 간주하고 Banker's algorithm을 실행 -> unsafe state이면 deadlock으로 판정
+     - Max가 없는 대신 현재 Request를 Need로 간주하고 Banker's algorithm을 실행 -> unsafe state 이면 deadlock으로 판정
    - Detection Algorithm(다음주에 추가 예정)
-     - 실행하는 시기: 자원요청을 실패할 때 detection algorithm을 수행하면 deadlock을 유발한 스레드를 식별하는데 도움이 됨
+     - 실행하는 시기: 자원 요청을 실패할 때 detection algorithm을 수행하면 deadlock을 유발한 스레드를 식별하는 데 도움이 됨
  - Recovery from Deadlock(다음주에 추가 예정)
    - process termination (종료)
    - resource preemption (자원선점)
