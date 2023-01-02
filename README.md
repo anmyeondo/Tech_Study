@@ -54,7 +54,7 @@
 3. [Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Thread.md)
 4. [Process VS Thread](https://github.com/anmyeondo/Tech_Study/blob/main/OS/ProcessVSThread.md)
 5. [Synchronize](https://github.com/anmyeondo/Tech_Study/blob/main/OS/3_Synchronize.md)
-6. Deadlock
+6. [Deadlock](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Deadlock.md)
 7. Segmentation & Paging
 8. Memory
 9. Inter Process Call
