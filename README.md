@@ -56,9 +56,10 @@
 5. [Synchronize](https://github.com/anmyeondo/Tech_Study/blob/main/OS/3_Synchronize.md)
 6. [Deadlock](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Deadlock.md)
 7. [Segmentation & Paging](https://github.com/anmyeondo/Tech_Study/blob/main/OS/SegmentationAndPaging.md)
-8. Memory
-9. Inter Process Call
-10. Scheduling Algorithm
+8. [Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Memory.md)
+9. [Virtual Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/VirtualMemory.md)
+10. Inter Process Call
+11. Scheduling Algorithm
 <br/>
 
 <div id="db"/>
