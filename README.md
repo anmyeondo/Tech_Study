@@ -57,7 +57,7 @@
 6. [Deadlock](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Deadlock.md)
 7. [Segmentation & Paging](https://github.com/anmyeondo/Tech_Study/blob/main/OS/SegmentationAndPaging.md)
 8. [Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Memory.md)
-9. [Virtual Memory & Demand Paging](https://github.com/anmyeondo/Tech_Study/blob/main/OS/VirtualMemoryAndDemandPaging.md)
+9. [Virtual Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/VirtualMemory.md)
 10. Inter Process Call
 11. Scheduling Algorithm
 <br/>
