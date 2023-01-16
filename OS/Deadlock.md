@@ -55,12 +55,14 @@
    <img width=40% src="https://user-images.githubusercontent.com/29935109/210230008-94f95356-73b6-469b-8f56-fe9dbb4b58d6.jpeg">
  - Avoidance algorithm
    - resource-allocation graph(single instance)
+     <p align="left"><img src="https://user-images.githubusercontent.com/29935109/212645827-cdc7c822-b5b8-4432-9f15-6b93fdff1222.jpg"></p>
      - resource-allocation graph를 사용해 process의 수행 순서를 결정함
      - 미래에 사용할 자원을 나타내는 Claim Edge를 사용(점선)<br/>
         -> 요청할 때 점섬이 실선으로 바뀜. 이때 cycle이 생기지 않으면 자원을 할당
    - Banker's algorithm(multiple instance)
      - 가진 자원 정보를 가지고 safe state가 존재하는지 확인하여 deadlock을 회피할 수 있게 하는 알고리즘
      - 프로세스가 사용할 자원들을 미리 보고 safe sequence를 찾는 알고리즘
+     <p align="left"><img src="https://user-images.githubusercontent.com/29935109/212644913-0e7d63a4-8697-4bd8-9213-fda75af321eb.jpg"></p>
      - 사용되는 변수
        1. Available: 각 Resource 별로 할당할 수 있는 남은 인스턴스 수
        2. Max: Process가 하나의 타입의 resource에 최대로 요구하는 인스턴스 수
@@ -79,10 +81,11 @@
    - wait-for graph(Resource-allocation graph에서 resource를 뺀 것)을 사용해 탐지 알고리즘 정의
    - 대기 그래프가 사이클을 포함하는 경우에만 시스템에 deadlock이 존재하고, 이를 탐지하기 위해 시스템은 대기 그래프를 유지하고 주기적으로 사이클을 탐지하는 알고리즘을 실행. 이 알고리즘의 복잡도는 O(n^2)
    <img width=60% src="https://user-images.githubusercontent.com/29935109/210230038-255b4b82-0e8b-4199-950e-d6f848507dc3.jpeg">
-   
  - Several Instance of a Resource Type
    - Banker's Algorithm과 유사하게 내용이 달라지는 자료구조를 사용
    - Banker's Algorithm과의 차이점
+   <p align="left"><img src="https://user-images.githubusercontent.com/29935109/212645006-af345a18-dc2f-4e18-bce1-935539516a40.png"></p>
+   
      - Max가 없고 Need 대신 Request를 사용하여 Banker's algorithm을 실행 -> unsafe state 이면 deadlock으로 판정
      - Need와 Request의 차이점: 
        - Need: 현재 상태에서 요청은 하지 않아도 궁극적으로 작업을 끝내기 위해 필요한 자원의 양
