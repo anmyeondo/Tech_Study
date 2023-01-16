@@ -36,10 +36,10 @@
     - 프로세스를 시작하기 전에 필요한 자원을 한꺼번에 할당하거나 잡고 있는 자원이 없을 때만 자원을 요청함
     - Low resource utilization과 starvation의 문제가 발생할 수 있음
  3. No Preemption
-    - 새로운 자원 할당이 불가능하면 가지고 있는 자원을 다 내놓거나 대기 중인 프로세스의 자원을 반납하게 함
+    - 새로운 자원 할당이 불가능하면 우선순위가 낮은 프로스세가 가지고 있는 자원을 다 내놓거나 대기 중인 프로세스의 자원을 반납하게 함
     - 자원을 다 할당받을 수 있을 때 프로세스를 다시 시작함
  4. Circular Wait
-    - total ordering을 통해 순서를 정하고 어떤 자원을 요청할 때 그 자원보다 높은 순서의 자원을 가질 수 없음
+    - total ordering을 통해 모든 프로세스에 우선순위를 정하고 어떤 자원을 요청할 때 그 자원보다 높은 순서의 자원을 가질 수 없음 (P5 -> P0 -> P1 -> P5에서 P5 -> P0를 불가능하게 만듦)
 - 1~3번 조건은 구현하기 굉장히 까다롭기 때문에 4번을 통해서 prevention 하는 것이 가장 현실적인 방법
 
 ### Deadlock avoidance (회피)
@@ -47,14 +47,31 @@
  - resource-allocation state가 circular-wait condition이 되지 않도록 하는 알고리즘을 일컬음
  - Safe State
    - 시스템에 있는 모든 프로세스가 각자 필요한 자원을 사용할 수 있는 실행 순서가 존재할 때 시스템이 'Safe State'에 있다고 말함
+   - Safe Sequence: 사용가능한 자원을 특정 process에게 주고 그 프로세스가 끝난 후 해당 자원을 받은 모든 프로세스의 요구를 처리해줄 수 있는 순서를 의미
  - Basic Facts
    - safe state -> no deadlocks
    - unsafe state -> deadlock 가능성 있음
    - avoidance는 시스템이 unsafe state로 들어가지 않는 것을 보장하는 것
    <img width=40% src="https://user-images.githubusercontent.com/29935109/210230008-94f95356-73b6-469b-8f56-fe9dbb4b58d6.jpeg">
- - Avoidance algorithm(다음주에 추가 예정)
+ - Avoidance algorithm
    - resource-allocation graph(single instance)
+     - resource-allocation graph를 사용해 process의 수행 순서를 결정함
+     - 미래에 사용할 자원을 나타내는 Claim Edge를 사용(점선)<br/>
+        -> 요청할 때 점섬이 실선으로 바뀜. 이때 cycle이 생기지 않으면 자원을 할당
    - Banker's algorithm(multiple instance)
+     - 가진 자원 정보를 가지고 safe state가 존재하는지 확인하여 deadlock을 회피할 수 있게 하는 알고리즘
+     - 프로세스가 사용할 자원들을 미리 보고 safe sequence를 찾는 알고리즘
+     - 사용되는 변수
+       1. Available: 각 Resource 별로 할당할 수 있는 남은 인스턴스 수
+       2. Max: Process가 하나의 타입의 resource에 최대로 요구하는 인스턴스 수
+       3. Allocation: Process에 할당된 resource의 인스턴스 수
+       4. Need: Process가 필요로 하는 resource의 인스턴스 수
+     - 단점
+       1. 할당할 수 있는 자원의 수가 일정해야 함
+       2. 사용자 수가 일정해야 함
+       3. 항상 불안전 상태를 방지해야 하므로 자원 이용도가 낮음
+       4. 최대 자원 요구량을 미리 알아야 함
+       5. 프로세스들은 유한한 시간 안에 자원을 반납해야 함
 
 ### Deadlock detection (탐지)
  - 위의 방법들을 적용하지 않았을 때, Deadlock이 발생할 수 있으니 이를 찾고 회복하는 알고리즘을 말함
@@ -66,12 +83,30 @@
  - Several Instance of a Resource Type
    - Banker's Algorithm과 유사하게 내용이 달라지는 자료구조를 사용
    - Banker's Algorithm과의 차이점
-     - Max가 없는 대신 현재 Request를 Need로 간주하고 Banker's algorithm을 실행 -> unsafe state 이면 deadlock으로 판정
+     - Max가 없고 Need 대신 Request를 사용하여 Banker's algorithm을 실행 -> unsafe state 이면 deadlock으로 판정
+     - Need와 Request의 차이점: 
+       - Need: 현재 상태에서 요청은 하지 않아도 궁극적으로 작업을 끝내기 위해 필요한 자원의 양
+       - Request: 현재 상태에서 특정 자원을 요청한 상황
    - Detection Algorithm(다음주에 추가 예정)
      - 실행하는 시기: 자원 요청을 실패할 때 detection algorithm을 수행하면 deadlock을 유발한 스레드를 식별하는 데 도움이 됨
- - Recovery from Deadlock(다음주에 추가 예정)
+     - safe sequence가 없는 경우 시간이 지날수록 deadlock 멤버가 늘어나 deadlock recovery가 어려워짐
+ - Recovery from Deadlock
    - process termination (종료)
+     - Abort all deadlocked Processes
+     - Abort one process at a time -> 그 후 deadlock이 풀리는지 계속 check
+     - process selection
+        1. 프로세스 우선순위
+        2. 프로세스가 수행한 시간과 일을 끝마치는데 남은 시간
+        3. 프로세스가 사용한 자원 타입과 양
+        4. 프로세스가 종료하기까지 남은 자원의 수
+        5. 얼마나 많은 수의 프로세스가 끝나야 하는지
+        6. 프로세스가 interactive인지, batch 형태인지
    - resource preemption (자원선점)
+     - 아래와 같은 순서를 통해 프로세스를 종료시키지 않고 자원만 뺏음
+     1. Selecting a victim: 어떤 프로세스의 어떤 자원을 뺏을지 결정
+     2. Rollback: 위에서 정한 프로세스로부터 자원을 가져오고 자원을 뺏긴 프로세스를 safe state로 rollback
+     3. Starvation: 우선순위에 따라 계속 희생하는 프로세스가 발생할 수 있으므로 이를 방지하기 위해 cost factors에 rollback 횟수를 포함시켜서 계산
+       
 
 ### Deadlock ignore (무시)
  - 대부분의 OS가 사용 (비용소모 X)
