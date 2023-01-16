@@ -67,7 +67,7 @@
 ## <img src="https://user-images.githubusercontent.com/29935137/198954770-9d19588b-82a1-4375-b09e-050c96779012.svg" width="20px" height="20px"> &nbsp;DataBase
 1. [ACID & Transaction](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/ACID%26Transaction.md)
 2. [Index](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Index.md)
-3. Sharding
+3. [Sharding](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Sharding.md)
 4. [DBMS](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/DBMS.md)
 5. Normalization, De-Normalizat
 6. Plan (EXPLAIN, ANALYZE, ...)
