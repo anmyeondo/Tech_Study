@@ -60,6 +60,9 @@ FIFO, LRU, LFU는 Cache 교체 알고리즘과 내용이 중복되어 추가 사
 ### MFU(Most Frequently Used) 알고리즘
 LRU와 반대로 참조 횟수가 가장 많은 페이지를 교체하는 알고리즘 -> 즉, 가장 많이 사용된 페이지가 앞으로는 사용될 가능성이 적다는 가정
 
+### NUR (Not Used Recently) 알고리즘
+얜 쫌 어려워서 추후 업데이트 예정...
+
 ## Reference
 https://devraphy.tistory.com/246  
 https://doh-an.tistory.com/28  
