@@ -54,6 +54,11 @@
 ### LRU
 캐시 메모리에서 가장 오랫동안 사용하지 않은 데이터 순으로 제거하는 알고리즘
 
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F952288ce-d835-4479-8724-8bf6d387beb9%2Fimage.png" width=900px height=400px/>
+</p>
+
+
 #### 구현방식
   - Doubly Linked List 사용
     - head일수록 자주 사용, tail일수록 사용 빈도 적음
@@ -72,9 +77,19 @@
     - 적재된 초반에 집중적으로 쓰여 사용 횟수가 많아졌으나 이후 거의 쓰이지 않는데도 잔존해버려 메모리 낭비 가능성이 있음
     - 최근 적재된 데이터가 교체될 수도 있음
 
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F6ea6c035-7b22-4899-bc07-328d16e2641e%2Fimage.png" width=900px height=400px/>
+</p>
 
 ### FIFO
 캐시 메모리에 올라온 가장 오래된 데이터를 교체  
   - Queue를 통해 구현
   - 구현이 간단함
   - 잦은 교체가 발생할 수 있음
+
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F3decee21-1879-4cac-b0ee-7d505e192c5d%2Fimage.png" width=900px height=400px/>
+</p>
+
+## Reference
+https://velog.io/@khsfun0312/%EC%BA%90%EC%8B%9C-%EC%A0%95%EC%B1%85%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
