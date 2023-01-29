@@ -16,7 +16,21 @@
 
 ## 페이지 폴트 (page faults)
 필요한 페이지만 메모리에 적재하기 때문에 어떤 페이지에 접근하려고 했을 때 해당페이지가 실제 물리 메모리에 존재하지 않을 수도 있다. 이러한 경우를 페이지 폴트라고 함.  
-페이지 폴트가 발생하면 MMU가 인터럽트(트랩)를 발생시킴. // 페이지 폴트 과정은 추후에 업데이트 부탁 ㅎ
+페이지 폴트가 발생하면 MMU가 인터럽트(트랩)를 발생시킴.
+
+## 페이지 폴트 과정
+
+<p align="center">
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdKWtjd%2Fbtq84OSvgkT%2FxWLi37RZbHLCGzorjwBBI0%2Fimg.png" width=760px height=360px/>
+</p>
+
+1. CPU에서 특정 데이터에 대한 가상 주소를 요청
+2. MMU에서 해당 주소를 기반으로 TLB 조회 -> 해당 데이터가 있으면 바로 반환
+3. TLB에 해당 데이터가 없다면 메인 메모리의 page table에 접근하여 해당 가상 주소의 물리 주소 검색 -> 해당 물리 주소가 메인 메모리에 적재되어 있다면 해당 물리주소 데이터를 바로 반환
+4. 메인 메모리에 적재되어 있지 않은 경우, MMU가 page fault 인터럽트 발생시켜 운영체제에 전달
+5. 운영체제는 page fault를 전달 받고 디스크에 접근하여 해당 페이지를 메인 메모리에 적재 후 메인 메모리의 page table 업데이트
+
+  - 참고로 TLB(Translation Lookaside Buffer)는 가상 메모리 주소를 물리적인 주소롤 변환하는 속도를 높이기 위해 사용되는 캐시임
 
 ## 페이지 교체 알고리즘
 FIFO, LRU, LFU는 Cache 교체 알고리즘과 내용이 중복되어 추가 사항만 적음  
