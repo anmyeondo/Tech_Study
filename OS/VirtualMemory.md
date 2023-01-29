@@ -7,6 +7,10 @@
 이때 가상적으로 주어진 주소를 가상 주소(virtual adress) 혹은 논리 주소(logical address) 라고 하며, 실제 메모리 상에서 유효한 주소를 물리 주소(physical adress) 라고 한다.  
 가상 주소 공간은 **메모리 관리 장치(MMU)** 에 의해 물리 주소로 변환된다.
 
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Virtual_memory.svg/220px-Virtual_memory.svg.png" width=300px height=600px/>
+</p>
+
 ## MMU(Memory Management Unit)
   - 가상 주소를 물리 주소로 변환해주는 장치(CPU 코어 안에 탑재됨)
   - 메모리 보호 기능 수행
@@ -21,7 +25,7 @@
 ## 페이지 폴트 과정
 
 <p align="center">
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdKWtjd%2Fbtq84OSvgkT%2FxWLi37RZbHLCGzorjwBBI0%2Fimg.png" width=760px height=360px/>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdKWtjd%2Fbtq84OSvgkT%2FxWLi37RZbHLCGzorjwBBI0%2Fimg.png" width=900px height=400px/>
 </p>
 
 1. CPU에서 특정 데이터에 대한 가상 주소를 요청
@@ -49,5 +53,14 @@ FIFO, LRU, LFU는 Cache 교체 알고리즘과 내용이 중복되어 추가 사
   - 프로세스가 앞으로 사용할 페이지를 미리 알아야 하는 점 때문에 실제로는 구현이 거의 불가능함
   - 실제로 사용하기 보다는 연구 목적을 위해 사용됨
 
+<p align="center">
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FS8lUX%2Fbtq9JNyN39f%2FoYoWX91sjF34LkuFfuJxrk%2Fimg.png" width=900px height=400px/>
+</p>
+
 ### MFU(Most Frequently Used) 알고리즘
-LRU와 반대로 참조 횟수가 가장 많은 페이지를 교체하는 알고리즘 -> 즉, 가장 많이 사용된 페이지가 앞으로는 사용될 가능성이 적다는 
+LRU와 반대로 참조 횟수가 가장 많은 페이지를 교체하는 알고리즘 -> 즉, 가장 많이 사용된 페이지가 앞으로는 사용될 가능성이 적다는 가정
+
+## Reference
+https://devraphy.tistory.com/246
+https://doh-an.tistory.com/28
+https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EB%AA%A8%EB%A6%AC
