@@ -59,7 +59,6 @@
 8. [Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Memory.md)
 9. [Virtual Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/VirtualMemory.md)
 10. Inter Process Call
-11. Scheduling Algorithm
 <br/>
 
 <div id="db"/>
