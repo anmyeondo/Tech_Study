@@ -86,9 +86,9 @@
         - 불안정한 정렬 방법
         - gap에 따라 시간복잡도의 편차가 큼
 - 시간 복잡도
-    - 최적: $O(n)$
+    - 최적: $O(nlogn/nlog^2n)$
     - 평균: Depends on gap
-    - 최악: $O(n^{1.25})\leq$
+    - 최악: $O(nlog^2n/n^2)$
 - 공간 복잡도: $O(n)$
 
 ## Heap Sort
@@ -128,12 +128,12 @@
 - 특징
     - 장점
         - 안정한 정렬 방법
-        - 입력 데이터가 무엇이든 간에 정렬되는 시간이 동일: $O(nlog_2n)$
+        - 입력 데이터가 무엇이든 간에 정렬되는 시간이 동일: $O(nlogn)$
     - 단점
         - 레코드가 Array라면 추가적인 저장 공간이 필요
         - 레코드들의 크기가 큰 경우 이동 횟수가 많으므로 매우 큰 시간적 낭비를 초래
 - 시간 복잡도
-    - 비교 횟수: $nlogn$ - 
+    - 비교 횟수: $nlogn$
     - 이동 횟수: $2nlogn$ - 임시 배열에 복사했다가 다시 가져와야 하므로 비교의 2배 
     - 최적: $O(nlogn)$
     - 평균: $O(nlogn)$
@@ -170,7 +170,7 @@
     - 많은 프로그래밍 언어에서 표준 정렬 알고리즘으로 채택되어 사용
 - 특징
     - 장점
-        - 최적의 시간 복잡도는 $O(n)
+        - 최적의 시간 복잡도는 $O(n)$
         - 참조 지역성이 뛰어남(Insertion sort)
         - 추가적인 메모리를 최소화 함
         - 안정한 정렬 방법
@@ -190,7 +190,7 @@
 |Selection Sort|$O(n^2)$|$O(n^2)$|$O(n^2)$|$O(1)$|X|O|
 |Insertion Sort|$O(n)$|$O(n^2)$|$O(n^2)$|$O(1)$|O|O|
 |Bubble Sort|$O(n)$|$O(n^2)$|$O(n^2)$|$O(1)$|O|O|
-|Shell Sort|$O(nlogn/nlog^2n)$|Depends on gap|$O(nlog^2n / n^2)$|$O(1)$|X|O|
+|Shell Sort|$O(nlogn/nlog^2n)$|Depends on gap|$O(nlog^2n/n^2)$|$O(1)$|X|O|
 |Heap Sort|$O(nlogn)$|$O(nlogn)$|$O(nlogn)$|$O(1)$|X|O|
 |Merge Sort|$O(nlogn)$|$O(nlogn)$|$O(nlogn)$|$O(n)$|O|X|
 |Quick Sort|$O(nlogn)$|$O(nlogn)$|$O(n^2)$|$O(logn)$|X|O|
