@@ -17,7 +17,7 @@
 <div id="algorithm"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954604-52cbd384-fadb-4cd9-82ba-b19dafa779cb.svg" width="20px" height="20px"> &nbsp;Algorithm
-1. Sort
+1. [Sort](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/Sort.md)
 2. Search
 <br/>
 
