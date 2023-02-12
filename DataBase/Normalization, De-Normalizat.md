@@ -66,15 +66,15 @@
 2. 모든 결정자가 후보키 집합에 속해야 한다.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/29935137/218292880-8779cf79-f9bf-4862-9be5-8951a08cc97c.png" width="500px" height="300px">
+<img src="https://user-images.githubusercontent.com/29935137/218312188-f0c236c0-c748-4b7c-936c-497f5d2ed328.png" width="500px" height="300px">
 </p>
 
 위의 테이블의 기본키는 {학번, 과목} 이다. 여기서 과목은 다른 교수가 가르칠 수 있지만, 교수는 가르치는 과목이 정해져 있다. <br/>
 따라서 과목을 결정하는 교수가 후보키의 집합에 없기 때문에 다음과 같이 분리할 수 있다.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/29935137/218292965-272b1d1e-73e2-4194-9e59-e2904783ea37.png" width="500px" height="300px">
-  <img src="https://user-images.githubusercontent.com/29935137/218292967-ee560f8d-10d2-452a-b5ff-8b67262ac8ff.png" width="500px" height="300px">
+  <img src="https://user-images.githubusercontent.com/29935137/218312325-392f85be-baa2-43f3-b95b-4965bf6cec19.png" width="500px" height="300px">
+  <img src="https://user-images.githubusercontent.com/29935137/218312351-b965b084-2369-4b4d-8e07-b3cd7bcad36c.png" width="500px" height="300px">
 </p>
 <br/>
 <br/>
