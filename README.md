@@ -68,7 +68,7 @@
 2. [Index](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Index.md)
 3. [Sharding](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Sharding.md)
 4. [DBMS](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/DBMS.md)
-5. Normalization, De-Normalizat
+5. [Normalization, De-Normalizat](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Normalization%2C%20De-Normalizat.md)
 6. Plan (EXPLAIN, ANALYZE, ...)
 7. [SQL](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/SQL.md)
 
