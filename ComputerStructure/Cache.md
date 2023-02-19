@@ -48,3 +48,48 @@
     - 여러개의 캐시 라인을 하나의 set으로 묶고 그렇게 만들어진 set들을 정해진 자리대로 저장 -> Direct Mapping
     - set 안에서는 순서가 정해져 있지 않고 어디든지 데이터 저장 가능 -> Associate Mapping
     - 데이터를 찾을 때 set번호를 참조해서 찾음
+
+## 캐시 교체 알고리즘
+
+### LRU
+캐시 메모리에서 가장 오랫동안 사용하지 않은 데이터 순으로 제거하는 알고리즘
+
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F952288ce-d835-4479-8724-8bf6d387beb9%2Fimage.png" width=900px height=400px/>
+</p>
+
+
+#### 구현방식
+  - Doubly Linked List 사용
+    - head일수록 자주 사용, tail일수록 사용 빈도 적음
+    - 교체가 필요할 때 tail쪽의 데이터 교체 후 새로운 데이터는 head쪽으로 배치
+    - 시간 복잡도 O(1)
+    - 구현이 간단하고 가장 보편적인 방식임
+    - 
+![KakaoTalk_20230129_193311389](https://user-images.githubusercontent.com/31719854/215320475-bb3641ff-d7bc-485b-9b11-d6d972694bff.jpg)
+
+
+### LFU
+캐시 메모리에서 사용 횟수가 가장 적은 데이터부터 교체하는 알고리즘  
+교체 대상이 여렷(횟수 동일)이면 LRU 알고리즘을 따름
+  - 단점
+    - 구현이 복잡함
+    - 적재된 초반에 집중적으로 쓰여 사용 횟수가 많아졌으나 이후 거의 쓰이지 않는데도 잔존해버려 메모리 낭비 가능성이 있음
+    - 최근 적재된 데이터가 교체될 수도 있음
+
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F6ea6c035-7b22-4899-bc07-328d16e2641e%2Fimage.png" width=900px height=400px/>
+</p>
+
+### FIFO
+캐시 메모리에 올라온 가장 오래된 데이터를 교체  
+  - Queue를 통해 구현
+  - 구현이 간단함
+  - 잦은 교체가 발생할 수 있음
+
+<p align="center">
+<img src="https://velog.velcdn.com/images%2Fkhsfun0312%2Fpost%2F3decee21-1879-4cac-b0ee-7d505e192c5d%2Fimage.png" width=900px height=400px/>
+</p>
+
+## Reference
+https://velog.io/@khsfun0312/%EC%BA%90%EC%8B%9C-%EC%A0%95%EC%B1%85%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
