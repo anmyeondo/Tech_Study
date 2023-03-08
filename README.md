@@ -36,14 +36,15 @@
 1. [OSI 7계층 & TCP/IP 4계층](https://github.com/0seob/Tech_Study/blob/main/Network/OSI7.md)
 2. [TCP & UDP](https://github.com/anmyeondo/Tech_Study/blob/main/Network/TCP_UDP.md)
 3. [HTTP & HTTPS](https://github.com/anmyeondo/Tech_Study/blob/main/Network/HTTP_HTTPS.md)
-4. Cookie & Session
-5. CORS
-6. SSL/TLS
-7. OAuth
-8. Proxy
-9. RESTful API
-10. Load Balancer
-11. Web Socket
+4. [Cookie](https://github.com/anmyeondo/Tech_Study/blob/main/Network/Cookie.md)
+5. [Session](https://github.com/anmyeondo/Tech_Study/blob/main/Network/Session.md)
+6. CORS
+7. SSL/TLS
+8. OAuth
+9. Proxy
+10. RESTful API
+11. Load Balancer
+12. Web Socket
 <br/>
 
 <div id="os"/>
