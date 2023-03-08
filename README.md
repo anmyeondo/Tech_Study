@@ -17,7 +17,7 @@
 <div id="algorithm"/>
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954604-52cbd384-fadb-4cd9-82ba-b19dafa779cb.svg" width="20px" height="20px"> &nbsp;Algorithm
-1. Sort
+1. [Sort](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/Sort.md)
 2. Search
 <br/>
 
@@ -59,7 +59,6 @@
 8. [Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/Memory.md)
 9. [Virtual Memory](https://github.com/anmyeondo/Tech_Study/blob/main/OS/VirtualMemory.md)
 10. Inter Process Call
-11. Scheduling Algorithm
 <br/>
 
 <div id="db"/>
@@ -69,7 +68,7 @@
 2. [Index](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Index.md)
 3. [Sharding](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Sharding.md)
 4. [DBMS](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/DBMS.md)
-5. Normalization, De-Normalizat
+5. [Normalization, De-Normalizat](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Normalization%2C%20De-Normalizat.md)
 6. Plan (EXPLAIN, ANALYZE, ...)
 7. [SQL](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/SQL.md)
 
