@@ -38,7 +38,7 @@
 3. [HTTP & HTTPS](https://github.com/anmyeondo/Tech_Study/blob/main/Network/HTTP_HTTPS.md)
 4. [Cookie](https://github.com/anmyeondo/Tech_Study/blob/main/Network/Cookie.md)
 5. [Session](https://github.com/anmyeondo/Tech_Study/blob/main/Network/Session.md)
-6. CORS
+6. [CORS](https://github.com/anmyeondo/Tech_Study/blob/main/Network/CORS.md)
 7. SSL/TLS
 8. OAuth
 9. Proxy
