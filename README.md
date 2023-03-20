@@ -73,6 +73,7 @@
 5. [Normalization, De-Normalizat](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/Normalization%2C%20De-Normalizat.md)
 6. Plan (EXPLAIN, ANALYZE, ...)
 7. [SQL](https://github.com/anmyeondo/Tech_Study/blob/main/DataBase/SQL.md)
+8. Redo, Undo
 
 ### 학습할 때 보면 좋은 링크
 [DBMS에 대하여](https://code-run.tistory.com/20)
