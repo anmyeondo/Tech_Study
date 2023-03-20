@@ -18,7 +18,8 @@
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198954604-52cbd384-fadb-4cd9-82ba-b19dafa779cb.svg" width="20px" height="20px"> &nbsp;Algorithm
 1. [Sort](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/Sort.md)
-2. Search
+2. [Complexity](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/Complexity.md)
+3. [Divide and Conquer](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/DC_DP_GR.md)
 <br/>
 
 <div id="data_structure"/>
