@@ -54,3 +54,4 @@ https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB
 https://cocoon1787.tistory.com/733
 https://ss-o.tistory.com/160
 https://www.infoq.com/news/2014/05/facebook-mvc-flux/
+https://developer.mozilla.org/ko/docs/Glossary/MVC
