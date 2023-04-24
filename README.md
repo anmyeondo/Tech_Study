@@ -91,7 +91,7 @@
 
 ## <img src="https://user-images.githubusercontent.com/29935137/198955416-b3f360ee-fa58-45e2-b4ea-85a0a53d6cac.svg" width="20px" height="20px"> &nbsp;Design Patterns
 1. [Gang Of Four (GoF)](https://github.com/anmyeondo/Tech_Study/tree/main/DesignPatterns/GoF)
-2. Model-View-Controller (MVC)
+2. [Model-View-Controller (MVC)](https://github.com/anmyeondo/Tech_Study/tree/main/DesignPatterns/MVC.md)
 3. J2EE (Java EE) 
 <br/>
 
