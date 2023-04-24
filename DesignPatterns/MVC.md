@@ -2,6 +2,11 @@
   - MVC란 Model-View-Controller의 약자로 애플리케이션을 세 가지 역할로 구분한 소프트웨어 디자인 패턴
   - 사용자 인터페이스로부터 비즈니스 로직을 분리하여 애플리케이션의 시작적 요소나 그 이면에서 실행되는 비즈니스 로직을 서로 영향 없이 쉽게 고칠 수 있는 애플리케이션을 만들 수 있음
 
+<p align ="center">
+  <img src="https://developer.mozilla.org/en-US/docs/Glossary/MVC/model-view-controller-light-blue.png" width = 800px height = 400px>
+</p>
+
+
 ## 모델 (Model)
   - 어플리케이션이 포함해야할 데이터가 무엇인지를 정의함. 즉, 쉽게말해 데이터를 가지고 있는 객체
   - 모델의 상태에 변화가 있을 때 컨트롤러와 뷰에 이를 통보 (대부분 뷰) -> 이와 같은 통보를 통해 뷰는 최신의 결과를 보여줄 수 있고, 컨트롤러는 모델의 변화에 따른 적용 가능한 명령을 추가, 제거, 수정할 수 있음
@@ -39,7 +44,7 @@
   이러한 현상을 Massive-View-Controller 현상이라 함.
   
 <p align ="center">
-  <img src="https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png" width = 1000px height = 500px>
+  <img src="https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png" width = 800px height = 400px>
 </p>
 
 ## Reference
