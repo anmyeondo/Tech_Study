@@ -36,4 +36,14 @@
 ## 단점
   - Model과 View는 서로의 정보를 갖고 있지 않는 독립적인 상태라고 하지만 Model과 View사이에는 Controller를 통해 소통을 이루기에 의존성이 완전히 분리될 수 없음.
   그래서 복잡한 대규모 프로그램의 경우 다수의 View와 Model이 Controller를 통해 연결되기 때문에 컨트롤러가 불필요하게 커지는 현상이 발생하기도 함.
-  이러한 현상을 Massive-View-Controller현상
+  이러한 현상을 Massive-View-Controller 현상이라 함.
+  
+https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png
+
+## Reference
+https://velog.io/@2dubu/MVC-%ED%8C%A8%ED%84%B4
+https://velog.io/@seongwon97/MVC-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80
+https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC
+https://cocoon1787.tistory.com/733
+https://ss-o.tistory.com/160
+https://www.infoq.com/news/2014/05/facebook-mvc-flux/
