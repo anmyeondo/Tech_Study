@@ -39,7 +39,7 @@
   이러한 현상을 Massive-View-Controller 현상이라 함.
   
 <p align ="center">
-  <img src="https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png" width = 500px height = 500px>
+  <img src="https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png" width = 1000px height = 500px>
 </p>
 
 ## Reference
