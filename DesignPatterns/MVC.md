@@ -48,10 +48,10 @@
 </p>
 
 ## Reference
-https://velog.io/@2dubu/MVC-%ED%8C%A8%ED%84%B4
-https://velog.io/@seongwon97/MVC-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80
-https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC
-https://cocoon1787.tistory.com/733
-https://ss-o.tistory.com/160
-https://www.infoq.com/news/2014/05/facebook-mvc-flux/
-https://developer.mozilla.org/ko/docs/Glossary/MVC
+https://velog.io/@2dubu/MVC-%ED%8C%A8%ED%84%B4  
+https://velog.io/@seongwon97/MVC-%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80  
+https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC  
+https://cocoon1787.tistory.com/733  
+https://ss-o.tistory.com/160  
+https://www.infoq.com/news/2014/05/facebook-mvc-flux/  
+https://developer.mozilla.org/ko/docs/Glossary/MVC  
