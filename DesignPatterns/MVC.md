@@ -38,7 +38,9 @@
   그래서 복잡한 대규모 프로그램의 경우 다수의 View와 Model이 Controller를 통해 연결되기 때문에 컨트롤러가 불필요하게 커지는 현상이 발생하기도 함.
   이러한 현상을 Massive-View-Controller 현상이라 함.
   
-https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png
+<p align ="center">
+  <img src="https://imgopt.infoq.com/fit-in/1200x2400/filters:quality(80)/filters:no_upscale()/news/2014/05/facebook-mvc-flux/en/resources/flux-react-mvc.png">
+</p>
 
 ## Reference
 https://velog.io/@2dubu/MVC-%ED%8C%A8%ED%84%B4
