@@ -148,3 +148,6 @@ function deleteUser(id, softDelete = false) {
 	return db.removeById(id);
 }
 ```
+
+## Reference
+https://www.youtube.com/watch?v=jafa3cqoAVM 드림코딩 유튜브
