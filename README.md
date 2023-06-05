@@ -21,6 +21,7 @@
 2. [Complexity](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/Complexity.md)
 3. [Divide and Conquer](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/DC_DP_GR.md)
 4. [DFS](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/DFS.md)
+5. [BFS](https://github.com/anmyeondo/Tech_Study/blob/main/Algorithm/BFS.md)
 <br/>
 
 <div id="data_structure"/>

@@ -4,7 +4,7 @@
 
 ## Selection Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Selection_sort_animation.gif/220px-Selection_sort_animation.gif"></p>
+<p align="center"><img src="../Img/Selection_sort.gif"></p>
 
 - 개념
     - 제자리 정렬(in-place sorting) 알고리즘의 하나
@@ -26,7 +26,7 @@
 ## Insertion Sort
 ---
 
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif"></p>
+<p align="center"><img src="../Img/Insertion_sort.gif"></p>
 
 - 개념
     - 자료 배열의 모든 요소를 앞에서부터 차례대로 이미 정렬된 배열 부분과 비교
@@ -48,7 +48,7 @@
 
 ## Bubble Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bubble_sort_animation.gif/220px-Bubble_sort_animation.gif"></p>
+<p align="center"><img src="../Img/Bubble_sort.gif"></p>
 
 - 개념
     - 서로 인접한 두 원소의 대소를 비교하고, 조건에 맞지 않다면 자리를 교환하며 정렬하는 알고리즘
@@ -69,7 +69,7 @@
 
 ## Shell Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif"></p>
+<p align="center"><img src="../Img/Shell_sort.gif"></p>
 
 - 개념
     - 리스트를 일정한 기준에 따라 분류
@@ -93,7 +93,7 @@
 
 ## Heap Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif"></p>
+<p align="center"><img src="../Img/Heap_sort.gif"></p>
 
 - 개념
     - 최대 힙 트리(내림차순)나 최소 힙 트리(오름차순)를 구성해 정렬하는 방법
@@ -118,7 +118,7 @@
 
 ## Merge Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif"></p>
+<p align="center"><img src="../Img/Merge_sort.gif"></p>
 
 - 개념
     - Divide: 리스트를 두 개의 균등한 크기로 분할
@@ -142,7 +142,7 @@
 
 ## Quick Sort
 ---
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sorting_quicksort_anim.gif/220px-Sorting_quicksort_anim.gif"></p>
+<p align="center"><img src="../Img/Quick_sort.gif"></p>
 
 - 개념
     - 다른 원소와의 비교만으로 정렬을 수행하는 비교 정렬
